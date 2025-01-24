@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.gmail.com'; // Replace with your SMTP host
         $mail->SMTPAuth   = true;
         $mail->Username   = 'info.mountaingriffon@gmail.com'; // Sender's email
-        $mail->Password   = 'Dehradun@123'; // App password
+        $mail->Password   = 'weqf jabj ichj hpmw'; // App password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SSL encryption
         $mail->Port       = 465; // SSL port
         
