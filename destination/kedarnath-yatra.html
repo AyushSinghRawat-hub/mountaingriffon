@@ -164,29 +164,26 @@
           
           <div class="comment-form-wrap pt-5">
             <h3 class="mb-5" style="font-size: 20px; font-weight: bold;">Have any Query</h3>
-            <form action="#" class="p-5 bg-light">
+            <form action="send_email.php" method="POST" class="bg-light p-5 contact-form">
               <div class="form-group">
-                <label for="name">Name *</label>
-                <input type="text" class="form-control" id="name">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" class="form-control" id="email">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <label for="phone">Phone no</label>
-                <input type="url" class="form-control" id="website">
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  <input type="text" name="phone" class="form-control" placeholder="Your Phone Number" required>
               </div>
               <div class="form-group">
-                <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
               </div>
-
-            </form>
+              <div class="form-group">
+                  <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-group">
+                  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+          </form>
           </div>
         </div>
 
