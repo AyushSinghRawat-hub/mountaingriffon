@@ -1,0 +1,11 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect requests with .html extension to their non-extension version
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^([^.]+)\.html$ %1 [R=301,L]
+
+# Rewrite non-extension URLs to their .html counterparts
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ $1.html [L]
